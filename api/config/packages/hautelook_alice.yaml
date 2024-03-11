@@ -1,0 +1,4 @@
+# config/packages/hautelook_alice.yaml
+
+hautelook_alice:
+    fixtures_path: '%kernel.project_dir%/src/DataFixtures'

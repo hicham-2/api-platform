@@ -1,0 +1,32 @@
+# src/DataFixtures/fixtures.yaml
+
+App\Entity\Categorie:
+  categorie_1:
+    nom: 'Entrée'
+  categorie_2:
+    nom: 'Plat principal'
+  categorie_3:
+    nom: 'Dessert'
+
+App\Entity\Difficulte:
+  difficulte_1:
+    niveau: 'Facile'
+  difficulte_2:
+    niveau: 'Moyen'
+  difficulte_3:
+    niveau: 'Difficile'
+
+App\Entity\Recette:
+  recette_1:
+    Name: 'Salade César'
+    Liste_ingredients: 'Laitue, Tomates, Poulet, Croutons, Parmesan'
+    Instruction_preparation: 'Mélanger tous les ingrédients, assaisonner avec la sauce César, servir frais.'
+    Difficulté: '@difficulte_1'
+    Categorie: '@categorie_1'
+
+  recette_2:
+    Name: 'Boeuf bourguignon'
+    Liste_ingredients: 'Viande de boeuf, Carottes, Oignons, Vin rouge, Bouquet garni'
+    Instruction_preparation: 'Faire revenir la viande et les légumes, ajouter le vin rouge et le bouquet garni, laisser mijoter.'
+    Difficulté: '@difficulte_2'
+    Categorie: '@categorie_2'
